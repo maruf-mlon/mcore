@@ -26,24 +26,6 @@ Each stored object contains:
 
 ### Example
 
-```go
-engine, _ := mcore.NewEngine("test.db")
-
-engine.Save(mcore.DataUnit{
-    ID: "1",
-    Type: "note",
-    Content: "Hello MCore!",
-})
-
-data, _ := engine.Get("1")
-fmt.Println(data.Content)
-
-### Installation
-
-```bash
-go get github.com/maruf-mlon/mcore
-
-
 ## 🇷🇺 Русский
 
 ### Возможности
@@ -60,9 +42,12 @@ go get github.com/maruf-mlon/mcore
 - `Type` — тип данных (заметка, ссылка, секрет и т.д.)  
 - `Content` — основное содержимое  
 - `Tags` — дополнительные метки  
-- `CreatedAt` — время создания  
+- `CreatedAt` — время создания
 
-### Пример
+
+```bash
+go get github.com/maruf-mlon/mcore
+
 
 ```go
 engine, _ := mcore.NewEngine("test.db")
@@ -70,13 +55,12 @@ engine, _ := mcore.NewEngine("test.db")
 engine.Save(mcore.DataUnit{
     ID: "1",
     Type: "note",
-    Content: "Привет, MCore!",
+    Content: "Hello MCore!",
 })
 
 data, _ := engine.Get("1")
 fmt.Println(data.Content)
 
-### Установка
+### Installation
 
-```bash
-go get github.com/maruf-mlon/mcore
+
