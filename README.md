@@ -22,12 +22,16 @@ Each stored object contains:
 - `Type` — type of data (note, link, secret, etc.)  
 - `Content` — main data  
 - `Tags` — optional labels  
-- `CreatedAt` — timestamp  
+- `CreatedAt` — timestamp
 
-### Example
+### Installation
 
 ```bash
 go get github.com/maruf-mlon/mcore
+
+
+
+### Example
 
 
 ```go
