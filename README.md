@@ -22,6 +22,13 @@ Each stored object contains:
 - `Tags` — optional labels  
 - `CreatedAt` — timestamp
 
+### Installation
+
+``bash
+go get github.com/maruf-mlon/mcore
+
+---
+
 ### Example
 
 engine, _ := mcore.NewEngine("test.db")
@@ -35,8 +42,3 @@ engine.Save(mcore.DataUnit{
 data, _ := engine.Get("1")
 fmt.Println(data.Content).
 
-
-### Installation
-
-```bash
-go get github.com/maruf-mlon/mcore
