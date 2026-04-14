@@ -6,8 +6,6 @@ It provides simple data storage and retrieval using a local database.
 
 ---
 
-## 🇬🇧 English
-
 ### Features
 
 - Store data units
@@ -24,17 +22,8 @@ Each stored object contains:
 - `Tags` — optional labels  
 - `CreatedAt` — timestamp
 
-### Installation
-
-```bash
-go get github.com/maruf-mlon/mcore
-
-
-
 ### Example
 
-
-```go
 engine, _ := mcore.NewEngine("test.db")
 
 engine.Save(mcore.DataUnit{
@@ -44,4 +33,10 @@ engine.Save(mcore.DataUnit{
 })
 
 data, _ := engine.Get("1")
-fmt.Println(data.Content)
+fmt.Println(data.Content).
+
+
+### Installation
+
+```bash
+go get github.com/maruf-mlon/mcore
