@@ -1,7 +1,5 @@
 # mcore
 
-# MCore
-
 **MCore** is a minimal storage core written in Go.
 
 It provides simple data storage and retrieval using a local database.
