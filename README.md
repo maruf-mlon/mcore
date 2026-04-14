@@ -60,7 +60,3 @@ engine.Save(mcore.DataUnit{
 
 data, _ := engine.Get("1")
 fmt.Println(data.Content)
-
-### Installation
-
-
