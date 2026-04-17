@@ -61,7 +61,7 @@ func (e *Mcore) Get(id string) (DataUnit, error) {
 		b := tx.Bucket([]byte("Vault"))
 		v := b.Get([]byte(id))
 		if v == nil {
-			return fmt.Errorf("error")
+			return fmt.Errorf("not found")
 		}
 		return json.Unmarshal(v, &unit)
 	})
